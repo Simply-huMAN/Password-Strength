@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Strength</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main-body">
+      <div class="main">
+        <h1>Password Strength</h1>
+        <div class="info">
+          <p>
+            Our work is to make best use of the available resources and get you
+            a strong password.<br />We do this by either suggesting you a strong
+            password or we help you in choosing the one.
+            <br />
+            For the past 2 years we have been serving customers and are
+            improving our approaches in making human lives more easier. We are
+            recognized by the Global 500 &copy; companies since 2020.
+          </p>
+        </div>
+        <div class="main-content">
+          <div class="item">
+            <h3>Welcome</h3>
+          </div>
+          <div class="item">
+            <label for="email-address">Email</label>
+            <input
+              class="input-field"
+              type="email"
+              placeholder="Enter your email address"
+            />
+          </div>
+          <div class="item">
+            <label for="password">Password</label>
+            <input
+              class="input-field"
+              id="password"
+              type="password"
+              onkeydown="password_strength()"
+              onkeyup="password_strength()"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="item">
+            <label for="password-checker">Password Strength</label>
+            <button class="input-field" id="password-strength">Weak</button>
+          </div>
+          <div class="item">
+            <ul>
+              <li>Lowercase & Uppercase</li>
+              <li>Numbers (0-9)</li>
+              <li>Special Characters (!@#$%^&*)</li>
+              <li>Atleast 8 Characters</li>
+            </ul>
+          </div>
+          <div class="item">
+            <button class="login">Create Account</button>
+          </div>
+          <div class="item">
+            <p>Already have an account | <span>Sign in</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
