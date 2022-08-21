@@ -49,6 +49,7 @@ h3 {
   width: var(--button-width);
   padding: 2px 5px 2px 10px;
   border-radius: 5px;
+  color: #fff;
   border: 1px solid white;
 }
 .input-field:hover {
