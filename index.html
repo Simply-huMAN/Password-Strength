@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Strength</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/83b63af0da.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="main-body">
+      <div class="main">
+        <h1>Password Strength</h1>
+        <div class="info">
+          <p>
+            Our work is to make best use of the available resources and get you
+            a strong password.<br />We do this by either suggesting you a strong
+            password or we help you in choosing the one.
+            <br />
+            For the past 2 years we have been serving customers and are
+            improving our approaches in making human lives more easier. We are
+            recognized by the Global 500 &copy; companies since 2020.
+          </p>
+        </div>
+        <div class="main-content">
+          <div class="item">
+            <h3>Welcome</h3>
+          </div>
+          <div class="item">
+            <label for="email-address">Email</label>
+            <input
+              class="input-field"
+              type="email"
+              placeholder="Enter your email address"
+            />
+          </div>
+          <div class="item">
+            <label for="password">Password</label>
+            <input
+              class="input-field"
+              id="password"
+              type="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="item">
+            <label for="password-checker">Password Strength</label>
+            <button class="input-field" id="password-strength">Weak</button>
+          </div>
+          <div class="item">
+            <div>
+              <div class="letter">&nbsp; <i class="fa-solid fa-circle" aria-hidden="true" style="color: rgb(94, 255, 0)"> </i> Lowercase & Uppercase</div>
+              <div class="number">&nbsp; <i class="fa-solid fa-circle" aria-hidden="true" style="color: rgb(255, 0, 85)"> </i> Numbers (0-9)</div>
+              <div class="character">&nbsp; <i class="fa-solid fa-circle" aria-hidden="true" style="color: rgb(0, 55, 255)"> </i> Special Characters (!@#$%^&*)</div>
+              <div class="size">&nbsp; <i class="fa-solid fa-circle" aria-hidden="true" style="color: rgb(255, 255, 0)"> </i> Atleast 8 Characters<div>
+            </div>
+          </div>
+          <div class="item">
+            <button class="login">Create Account</button>
+          </div>
+          <div class="item">
+            <p>Already have an account | <span>Sign in</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
