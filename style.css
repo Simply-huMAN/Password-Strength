@@ -76,7 +76,7 @@ span {
 /* responsiveness */
 @media (max-width: 700px) {
   * {
-    margin: 2%;
+    margin: 5%;
   }
   h1 {
     font-size: 35px;
