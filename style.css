@@ -82,14 +82,14 @@ span {
 /* responsiveness */
 @media (max-width: 700px) {
   * {
-    margin: 5%;
+    /* margin: 5%; */
   }
   .main-content {
     /* margin: 5%; */
-    width: 90%;
+    width: 99%;
   }
   .input-field {
-    width: 95%;
+    width: 99%;
     border: 1px solid #fff;
   }
   h1 {
