@@ -32,7 +32,6 @@ const character = document.querySelector(".character i");
 const size = document.querySelector(".size i");
 function check_strength() {
   let ans = password.value;
-
   //letters
   if (ans.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
     letter.classList.remove("fa-circle");
@@ -70,7 +69,50 @@ function check_strength() {
   }
 }
 
-password.addEventListener("keyup", function () {
+//random password generate
+const special_cha =
+  "abcdefghijklmnopqrstuvwxyz!@#$%^&*ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+let ran_pass = "";
+function generate_password() {
+  for (i = 0; i < 8; i++) {
+    ran_pass += special_cha.charAt(
+      Math.floor(Math.random() * special_cha.length)
+    );
+  }
+  return ran_pass;
+}
+
+// function to do both generate password and check password strength
+function call() {
+  let res = "";
+  for (i = 0; i < 8; i++) {
+    res += special_cha.charAt(Math.floor(Math.random() * special_cha.length));
+    password.value = res;
+    console.log(password.value);
+    password.addEventListener("input", function () {
+      let strength = password.value;
+      check_strength();
+      password_strength(strength);
+    });
+  }
+}
+
+let pass_generate = document.getElementById("generate-pass");
+pass_generate.addEventListener("click", function () {
+  password.value = generate_password();
+  console.log(password.value);
+  /*The below function works after the completion of generate_password,
+  I want the function to run parallel.*/
+  password.addEventListener("input", function () {
+    let strength = password.value;
+    check_strength();
+    password_strength(strength);
+  });
+
+  // call();
+});
+
+password.addEventListener("input", function () {
   let strength = password.value;
   check_strength();
   password_strength(strength);
